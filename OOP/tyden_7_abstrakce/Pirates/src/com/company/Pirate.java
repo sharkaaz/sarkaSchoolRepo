@@ -7,8 +7,28 @@ public class Pirate {
     private String name;
     private int intoxication;
     private int originalIntoxication;
-    boolean Alive;
-    boolean Sleeping;
+    protected boolean Alive;
+    private boolean Sleeping;
+
+    public String getName() {
+        return name;
+    }
+
+    public int getIntoxication() {
+        return intoxication;
+    }
+
+    public int getOriginalIntoxication() {
+        return originalIntoxication;
+    }
+
+    public boolean isAlive() {
+        return Alive;
+    }
+
+    public boolean isSleeping() {
+        return Sleeping;
+    }
 
     public Pirate() {
         this.name = name;
@@ -20,7 +40,7 @@ public class Pirate {
 
     public void drinkSomeRum() {
         if (Alive = true) {
-            this.intoxication++;
+            intoxication++;
         } else {
             System.out.println("Pirate is dead or pass out already.");
         }
